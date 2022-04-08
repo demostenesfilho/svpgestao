@@ -254,7 +254,7 @@
               </a>
             </li>
             <li>
-              <a href="minhasvendas.html" class="">
+              <a href="javascript:;" class="">
                 <div class="parent-icon"><i class="fadeIn animated bx bx-spreadsheet"></i>
                 </div>
                 <div class="menu-title">Minhas vendas</div>
@@ -300,96 +300,104 @@
               
             <div class="card">
                 <div class="card-body">
-                    <div class="border p-4 rounded">
-                        <div class="card-title d-flex align-items-center">
-                            <h5 class="mb-0">DADOS DO CLIENTE</h5>
-                        </div>
-                        <hr>
-                        <div class="row mb-3">
-                            <label for="inputEnterYourName" class="col-sm-3 col-form-label">NOME</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputnome" placeholder="NOME">
+                  <div class="d-flex align-items-center">
+                     <h5 class="mb-0">PRODUTOS</h5>
+                      <form class="ms-auto position-relative">
+                        <div class="position-absolute top-50 translate-middle-y px-3"></div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            NOVO PRODUTO
+                          </button>
+                      </form>
+                  </div>
+                  <div class="table-responsive mt-3">
+                    <table class="table align-middle">
+                      <thead class="table-secondary">
+                        <tr>
+                         <th>PRODUTO</th>
+                         <th>CORES/ ESTAMPAS</th>
+                         <th>TAMANHOS</th>
+                         <th>AÇÕES</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>NOME DO PRODUTO</td>
+                          <td>VARIAÇÃO</td>
+                          <td>VARIAÇÃO</td>
+                          <td>
+                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                              <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Views" aria-label="Views"><i class="bi bi-eye-fill"></i></a>
+                              <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit" aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="inputPhoneNo2" class="col-sm-3 col-form-label">TELEFONE</label>
-                            <div class="col-sm-9">
-                                <input type="tel" class="form-control" id="inputtelefone" placeholder="TELEFONE">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="inputEmailAddress2" class="col-sm-3 col-form-label">CIDADE</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputcidade" placeholder="CIDADE">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="inputChoosePassword2" class="col-sm-3 col-form-label">EXCURSÃO</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputexcursao" placeholder="EXCURSÃO">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="inputConfirmPassword2" class="col-sm-3 col-form-label">SETOR</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control" id="inputsetor" placeholder="SETOR">
-                            </div>
-                        </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">NOVO PRODUTO</h5>
                     </div>
+                    <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Nome do produto:</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                        <div>
+                            <label for="exampleInputPassword1" class="form-label">Cor/ estampa:</label>
+                            <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" />
+                        </div>
+                        <br>
+                        <div>
+                            <label for="exampleInputPassword1" class="form-label">Tamanhos:</label>
+                            <br />
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">U</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">PP</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox2">P</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox2">M</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox2">G</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option6">
+                                <label class="form-check-label" for="inlineCheckbox2">GG</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option7">
+                                <label class="form-check-label" for="inlineCheckbox2">EG</label>
+                              </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">SAIR</button>
+                    <button type="button" class="btn btn-primary">SALVAR PRODUTO</button>
+                    </div>
+                </div>
                 </div>
             </div>
 
-
-        <div class="card">
-            <div class="card-body">
-                <div class="border p-4 rounded">
-                    <div class="card-title d-flex align-items-center">
-                        <h5 class="mb-0">PRODUTOS</h5>
-                    </div>
-                    <hr>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-4 border rounded">
-                                <form class="row g-3 needs-validation" novalidate="">
-                                    <div class="col-md-8">
-                                        <label for="validationCustom02" class="form-label">PRODUTO</label>
-                                        <select class="form-select mb-3" aria-label="Default select example">
-                                            <option selected="">Escolha qual produto</option>
-                                            <option value="1"></option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <label for="validationCustom02" class="form-label">QUANTIDADE</label>
-                                        <input type="number" class="form-control" id="validationCustom02" value="0" required="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="validationCustom02" class="form-label">COR/ ESTAMPA</label>
-                                        <select class="form-select mb-3" aria-label="Default select example">
-                                            <option selected="">Escolha qual cor ou estampa</option>
-                                            <option value="1"></option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="validationCustom02" class="form-label">TAMANHO</label>
-                                        <select class="form-select mb-3" aria-label="Default select example">
-                                            <option selected="">Escolha qual tamanho</option>
-                                            <option value="1"></option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-danger" type="submit">REMOVER ITEM</button>
-                                    </div>
-                                    <hr />
-                                    <div class="col-12">
-                                        <button class="btn btn-primary" type="submit">ADICIONAR ITEM</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
           </main>
        <!--end page main-->
@@ -427,3 +435,9 @@
 </body>
 
 </html>
+
+
+
+
+
+
