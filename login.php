@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="light-theme">
+<html lang="pt-br" class="light-theme">
 
 <head>
   <!-- Required meta tags -->
@@ -17,7 +17,7 @@
   <!-- loader-->
 	<link href="assets/css/pace.min.css" rel="stylesheet" />
 
-  <title>Snacked - Bootstrap 5 Admin Template</title>
+  <title>SVP Gestão - Sistema de vendas e produção</title>
 </head>
 
 <body>
@@ -36,54 +36,49 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="card-body p-4 p-sm-5">
-                    <h5 class="card-title">Sign Up</h5>
-                    <p class="card-text mb-5">See your growth and get consulting support!</p>
+                    <h5 class="card-title">Login</h5>
+                    <p class="card-text mb-5">Veja seu crescimento e obtenha suporte de consultoria!</p>
                     <form class="form-body">
                       <div class="d-grid">
                         <a class="btn btn-white radius-30" href="javascript:;"><span class="d-flex justify-content-center align-items-center">
                             <img class="me-2" src="assets/images/icons/search.svg" width="16" alt="">
-                            <span>Sign up with Google</span>
+                            <span>Login com o Google</span>
                           </span>
                         </a>
                       </div>
-                      <div class="login-separater text-center mb-4"> <span>OR SIGN UP WITH EMAIL</span>
+                      <div class="login-separater text-center mb-4"> <span>OU ENTRE COM SEU EMAIL</span>
                         <hr>
                       </div>
                         <div class="row g-3">
-                          <div class="col-12 ">
-                            <label for="inputName" class="form-label">Name</label>
-                            <div class="ms-auto position-relative">
-                              <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-person-circle"></i></div>
-                              <input type="email" class="form-control radius-30 ps-5" id="inputName" placeholder="Enter Name">
-                            </div>
-                          </div>
                           <div class="col-12">
-                            <label for="inputEmailAddress" class="form-label">Email Address</label>
+                            <label for="inputEmailAddress" class="form-label">E-mail</label>
                             <div class="ms-auto position-relative">
                               <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-envelope-fill"></i></div>
-                              <input type="email" class="form-control radius-30 ps-5" id="inputEmailAddress" placeholder="Email Address">
+                              <input type="email" class="form-control radius-30 ps-5" id="inputEmailAddress" placeholder="E-mail">
                             </div>
                           </div>
                           <div class="col-12">
-                            <label for="inputChoosePassword" class="form-label">Enter Password</label>
+                            <label for="inputChoosePassword" class="form-label">Senha</label>
                             <div class="ms-auto position-relative">
                               <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-lock-fill"></i></div>
-                              <input type="password" class="form-control radius-30 ps-5" id="inputChoosePassword" placeholder="Enter Password">
+                              <input type="password" class="form-control radius-30 ps-5" id="inputChoosePassword" placeholder="Senha">
                             </div>
                           </div>
-                          <div class="col-12">
+                          <div class="col-6">
                             <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-                              <label class="form-check-label" for="flexSwitchCheckChecked">I Agree to the Trems & Conditions</label>
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                              <label class="form-check-label" for="flexSwitchCheckChecked">Mantenha conectado</label>
                             </div>
+                          </div>
+                          <div class="col-6 text-end">	<a href="authentication-forgot-password.html">Esqueceu a senha ?</a>
                           </div>
                           <div class="col-12">
                             <div class="d-grid">
-                              <button type="submit" class="btn btn-primary radius-30">Sign in</button>
+                              <button type="submit" class="btn btn-primary radius-30">Entrar</button>
                             </div>
                           </div>
                           <div class="col-12">
-                            <p class="mb-0">Already have an account? <a href="authentication-signin.html">Sign up here</a></p>
+                            <p class="mb-0">Não tem uma conta ainda?<a href="authentication-signup.html">Cadastrar agora</a></p>
                           </div>
                         </div>
                     </form>
@@ -105,7 +100,7 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/pace.min.js"></script>
 
-  
+
 </body>
 
 </html>
