@@ -1,9 +1,4 @@
 <?php
-session_start();
-$sessao = false;
-if(isset($_SESSION['usuario']) && $_SESSION['usuario'] != "" ){  
-  $sessao = true;
-}
 
 require("controllers/autentication.php");
 
