@@ -38,7 +38,7 @@
                   <div class="card-body p-4 p-sm-5">
                     <h5 class="card-title">Criar conta</h5>
                     <p class="card-text mb-5">Veja seu crescimento e obtenha suporte de consultoria!</p>
-                    <form class="form-body">
+                    <form method="POST" action="model/cadastrar_usuario.php" class="form-body">
                       <div class="d-grid">
                         <a class="btn btn-white radius-30" href="javascript:;"><span class="d-flex justify-content-center align-items-center">
                             <img class="me-2" src="assets/images/icons/search.svg" width="16" alt="">
@@ -54,21 +54,28 @@
                             <label for="inputName" class="form-label">Nome</label>
                             <div class="ms-auto position-relative">
                               <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-person-circle"></i></div>
-                              <input type="email" class="form-control radius-30 ps-5" id="inputName" placeholder="Nome">
+                              <input name="nome" type="text" class="form-control radius-30 ps-5" id="inputName" placeholder="Nome">
+                            </div>
+                          </div>
+                          <div class="col-12 ">
+                            <label for="inputName" class="form-label">Empresa</label>
+                            <div class="ms-auto position-relative">
+                              <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-person-circle"></i></div>
+                              <input name="empresa" type="text" class="form-control radius-30 ps-5" id="inputName" placeholder="Nome">
                             </div>
                           </div>
                           <div class="col-12">
                             <label for="inputEmailAddress" class="form-label">E-mail</label>
                             <div class="ms-auto position-relative">
                               <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-envelope-fill"></i></div>
-                              <input type="email" class="form-control radius-30 ps-5" id="inputEmailAddress" placeholder="E-mail">
+                              <input name="email" type="email" class="form-control radius-30 ps-5" id="inputEmailAddress" placeholder="E-mail">
                             </div>
                           </div>
                           <div class="col-12">
                             <label for="inputChoosePassword" class="form-label">Senha</label>
                             <div class="ms-auto position-relative">
                               <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-lock-fill"></i></div>
-                              <input type="password" class="form-control radius-30 ps-5" id="inputChoosePassword" placeholder="Senha">
+                              <input minlength="8" name="senha" type="password" class="form-control radius-30 ps-5" id="inputChoosePassword" placeholder="Senha">
                             </div>
                           </div>
                           <div class="col-12">
@@ -79,7 +86,7 @@
                           </div>
                           <div class="col-12">
                             <div class="d-grid">
-                              <button type="submit" class="btn btn-primary radius-30">Criar conta agora</button>
+                              <button type="submit" class="btn btn-primary radius-30 botaoconfirma">Criar conta agora</button>
                             </div>
                           </div>
                           <div class="col-12">
