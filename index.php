@@ -4,6 +4,17 @@ $sessao = false;
 if(isset($_SESSION['usuario']) && $_SESSION['usuario'] != "" ){  
   $sessao = true;
 }
+
+require("model/persistency/db.php");
+
+$sql = "SELECT nome FROM usuario WHERE codigo=" . $_SESSION['usuario'];
+$resultado = banco($sql);
+$resultado = pg_fetch_assoc($resultado);
+$usuario = $resultado['nome'];
+
+$sql = "SELECT * FROM usuario  WHERE codigo_usuario=" . $_SESSION['usuario'] . "ORDER BY data_insercao DESC";
+$resultado = banco($sql);
+
 ?>
 
 <!DOCTYPE html>
