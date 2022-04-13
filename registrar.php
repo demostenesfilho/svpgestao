@@ -61,7 +61,7 @@
                             <label for="inputName" class="form-label">Empresa</label>
                             <div class="ms-auto position-relative">
                               <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-person-circle"></i></div>
-                              <input name="empresa" type="text" class="form-control radius-30 ps-5" id="inputName" placeholder="Nome">
+                              <input name="empresa" type="text" class="form-control radius-30 ps-5" id="inputName" placeholder="Empresa">
                             </div>
                           </div>
                           <div class="col-12">
