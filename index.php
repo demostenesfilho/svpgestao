@@ -1,16 +1,16 @@
 <?php
 
-require("controllers/autentication.php");
+//require("controllers/autentication.php");
 
-//require("model/persistency/db.php");
+require("model/persistency/db.php");
 
-//$sql = "SELECT nome FROM usuario WHERE codigo=" . $_SESSION['usuario'];
-//$resultado = banco($sql);
-//$resultado = pg_fetch_assoc($resultado);
-//$usuario = $resultado['nome'];
+$sql = "SELECT nome FROM usuario WHERE codigo=" . $_SESSION['usuario'];
+$resultado = banco($sql);
+$resultado = pg_fetch_assoc($resultado);
+$usuario = $resultado['nome'];
 
-//$sql = "SELECT * FROM usuario  WHERE codigo_usuario=" . $_SESSION['usuario'];
-//$resultado = banco($sql);
+$sql = "SELECT * FROM usuario  WHERE codigo_usuario=" . $_SESSION['usuario'];
+$resultado = banco($sql);
 ?>
 
 <!DOCTYPE html>
