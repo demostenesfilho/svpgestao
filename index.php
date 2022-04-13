@@ -5,7 +5,6 @@ if(isset($_SESSION['usuario']) && $_SESSION['usuario'] != "" ){
   $sessao = true;
 }
 
-<?php 
 require("controllers/autentication.php");
 
 require("model/persistency/db.php");
