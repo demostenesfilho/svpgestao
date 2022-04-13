@@ -5,7 +5,7 @@ if (isset($_POST['email']) && $_POST['email'] != "" && isset($_POST['senha']) &&
     $email = pg_escape_string($_POST['email']);
     $senha = pg_escape_string($_POST['senha']);
     //*/
-    $sql = "SELECT * FROM empresa WHERE email='" . $email . "' AND senha='" .$senha . "'";
+    $sql = "SELECT * FROM usuario WHERE email='" . $email . "' AND senha='" .$senha . "'";
     $resultado = banco($sql);
     if (pg_num_rows($resultado) != 1) {
         // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
