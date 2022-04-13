@@ -1,3 +1,25 @@
+<?php
+session_start();
+$sessao = false;
+if(isset($_SESSION['usuario']) && $_SESSION['usuario'] != "" ){  
+  $sessao = true;
+}
+
+<?php 
+require("controllers/autentication.php");
+
+require("model/persistency/db.php");
+
+$sql = "SELECT nome FROM usuario WHERE codigo=" . $_SESSION['usuario'];
+$resultado = banco($sql);
+$resultado = pg_fetch_assoc($resultado);
+$empresa = $resultado['nome'];
+
+$sql = "SELECT * FROM usuario  WHERE codigo_usuario=" . $_SESSION['usuario'];
+$resultado = banco($sql);
+//$resultado = pg_fetch_assoc($resultado);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" class="light-theme">
 <head>
@@ -60,8 +82,8 @@
                        <div class="d-flex align-items-center">
                           <img src="https://via.placeholder.com/110X110" alt="" class="rounded-circle" width="54" height="54">
                           <div class="ms-3">
-                            <h6 class="mb-0 dropdown-user-name">Usuário</h6>
-                            <small class="mb-0 dropdown-user-designation text-secondary">Empresa</small>
+                            <h6 class="mb-0 dropdown-user-name"><?= $usuario ?></h6>
+                            <small class="mb-0 dropdown-user-designation text-secondary"><?= $empresa ?></small>
                           </div>
                        </div>
                      </a>

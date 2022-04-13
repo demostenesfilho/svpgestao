@@ -20,7 +20,7 @@ if (isset($_POST['email']) && $_POST['email'] != "" && isset($_POST['senha']) &&
              $_SESSION['usuario'] = $resultado['codigo'];
        }
        // Redireciona o visitante
-       header("Location: ../perfil.php");
+       header("Location: ../index.php");
   }
 }else{
     header("Location: ../error_login.html"); 
