@@ -50,6 +50,7 @@ echo "<p>Tabela Fornecedor apagada com sucesso !</p>";
 /* CRIAR TABELA E POPULAR COM VALORES */
 $sql ="CREATE TABLE fornecedor(";
 $sql .= "codigo SERIAL NOT NULL,";
+$sql .="codigo_usuario INTEGER NOT NULL,";
 $sql .= "nome VARCHAR(250),";
 $sql .= "chave VARCHAR(255),";
 $sql .= "PRIMARY KEY(codigo)";
@@ -65,6 +66,7 @@ echo "<p>Tabela Produto apagada com sucesso !</p>";
 /* CRIAR TABELA E POPULAR COM VALORES */
 $sql ="CREATE TABLE produto(";
 $sql .= "codigo SERIAL NOT NULL,";
+$sql .="codigo_usuario INTEGER NOT NULL,";
 $sql .= "nome VARCHAR(250),";
 $sql .= "tamanhos VARCHAR(250),";
 $sql .= "comissao VARCHAR(100),";
@@ -75,4 +77,21 @@ $sql .= ");";
 /* PASSANDO O PARAMETRO SQL PARA FUNÇÃO BANCO */
 banco($sql);
 echo "<p>Tabela Produto criada com sucesso !</p>";
+
+/* DELETAR TABELA CASO EXISTIR produto */
+banco("DROP TABLE IF EXISTS excursao CASCADE");
+/* PRINTAR SE A TABELA FOI APAGADA */
+echo "<p>Tabela Excursão apagada com sucesso !</p>";
+/* CRIAR TABELA E POPULAR COM VALORES */
+$sql ="CREATE TABLE excursao(";
+$sql .= "codigo SERIAL NOT NULL,";
+$sql .= "nome VARCHAR(250),";
+$sql .= "setor VARCHAR(250),";
+$sql .= "vaga VARCHAR(100),";
+$sql .= "chave VARCHAR(255),";
+$sql .= "PRIMARY KEY(codigo)";
+$sql .= ");";
+/* PASSANDO O PARAMETRO SQL PARA FUNÇÃO BANCO */
+banco($sql);
+echo "<p>Tabela Excursão criada com sucesso !</p>";
 ?>
